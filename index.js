@@ -1,4 +1,4 @@
-import promiseStatusAsync from 'promise-status-async';
+const promiseStatusAsync = require('promise-status-async');
 
 async function filterAsync(arr, callback, thisArg) {
   return arr.reduce(
@@ -33,11 +33,14 @@ function arrayForEachParallel(iterable, maxParallel, handleFunction, thisArg) {
     }
 
     try {
-      do {
+      while (true) {
         fillTailProcessing();
+
+        if (!prosecutions.length) break;
+
         await Promise.race(prosecutions);
         prosecutions = await filterAsync(prosecutions, promiseStatusAsync.isPromisePending);
-      } while (!prosecutions.length);
+      };
       return resolve();
     } catch (error) {
       return reject(error);
