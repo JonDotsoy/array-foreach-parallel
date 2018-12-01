@@ -3,8 +3,7 @@
   "version": "1.0.1",
   "description": "`arrayForEachParallel()` executes the callback provided by `maxParallel` times for each element present in the array in ascending order.",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "author": "Jonathan Delgado <hi@jon.soy> (https://jon.soy/)",
   "license": "MIT",
   "dependencies": {
@@ -17,5 +16,14 @@
     "es7",
     "polyfill",
     "promise"
-  ]
+  ],
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonDotsoy/array-foreach-parallel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JonDotsoy/array-foreach-parallel/issues"
+  },
+  "homepage": "https://github.com/JonDotsoy/array-foreach-parallel#readme"
 }
