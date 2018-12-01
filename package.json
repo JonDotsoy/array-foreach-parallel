@@ -1,6 +1,6 @@
 {
   "name": "array-foreach-parallel",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "`arrayForEachParallel()` executes the callback provided by `maxParallel` times for each element present in the array in ascending order.",
   "main": "index.js",
   "scripts": {},
